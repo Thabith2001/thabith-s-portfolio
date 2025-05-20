@@ -12,7 +12,7 @@ const About = () => {
                         <div
                             className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-4 border-sky-500 shrink-0 mb-10 p-1 md:place-items-center">
                             <img
-                                src="src/assets/thabith.jpeg"
+                                src="../../../public/thabith.jpeg"
                                 alt="Profile"
                                 className="w-full h-full object-cover rounded-full"
                             />
@@ -182,7 +182,7 @@ const About = () => {
                         {/* Download Resume Button */}
                         <div className="mt-6">
                             <a
-                                href="src/assets/MohamedThabith(se%20trainee).pdf"
+                                href="/MohamedThabith(se trainee).pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block bg-sky-500 text-gray-900 font-semibold py-2 px-4 rounded-xl shadow-md hover:bg-sky-600  active:bg-sky-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
