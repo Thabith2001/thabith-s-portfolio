@@ -19,7 +19,7 @@ function App() {
                 <Docs/>
                 <Contact/>
             </main>
-            <Footer />
+            <Footer/>
         </div>
     );
 }
