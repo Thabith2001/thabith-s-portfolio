@@ -127,22 +127,32 @@ export default function Docs() {
                </div>
 
                {/* Dialog */}
-               <Dialog open={!!selectedDoc} onClose={() => setSelectedDoc(null)} className="fixed z-50 inset-0">
+                 <Dialog open={!!selectedDoc} onClose={() => setSelectedDoc(null)} className="fixed z-50 inset-0">
                    <div className="flex items-center justify-center min-h-screen bg-black bg-opacity-50 p-4">
                        {selectedDoc?.src && (
-                           <Dialog.Panel className="bg-white rounded-lg max-w-3xl w-full h-full p-4 relative">
+                           <Dialog.Panel className="bg-white rounded-lg max-w-[90vw] w-full h-auto p-4 relative overflow-hidden">
                                <button
                                    className="absolute top-3 right-3 text-gray-600 hover:text-red-500"
                                    onClick={() => setSelectedDoc(null)}
                                >
                                    <X />
                                </button>
-                               <Dialog.Title className="text-xl font-bold mb-4">{selectedDoc.title}</Dialog.Title>
-                               <div className="max-h-[75vh] overflow-auto rounded">
+                               <Dialog.Title className="text-lg sm:text-xl font-bold mb-4 text-center">
+                                   {selectedDoc.title}
+                               </Dialog.Title>
+                               <div className="max-h-[75vh] overflow-auto  rounded flex justify-center items-center">
                                    {selectedDoc.type === "image" ? (
-                                       <img src={selectedDoc.src} alt={selectedDoc.title} className="h-full rounded" />
+                                       <img
+                                           src={selectedDoc.src}
+                                           alt={selectedDoc.title}
+                                           className="max-h-[70vh] w-auto object-contain border border-stone-500"
+                                       />
                                    ) : (
-                                       <iframe src={selectedDoc.src} title={selectedDoc.title} className="w-full h-[70vh] border rounded" />
+                                       <iframe
+                                           src={selectedDoc.src}
+                                           title={selectedDoc.title}
+                                           className="w-full h-[70vh] border rounded"
+                                       />
                                    )}
                                </div>
                            </Dialog.Panel>
