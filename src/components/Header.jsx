@@ -46,6 +46,7 @@ const Header = () => {
                         <a
                             key={index}
                             href={hrefs[index]}
+                              onClick={() => setIsMobileMenuOpen(false)}
                             className="block text-gray-50 transition delay-100 duration-700 ease-in-out text-base
                    hover:text-sky-500 hover:font-bold
                    active:text-sky-500 active:font-bold"
