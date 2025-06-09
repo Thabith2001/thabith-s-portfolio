@@ -22,6 +22,35 @@ export const documents = [
         cover: "/images/award.png",
     },
     {
+        title: "UK Award Level 5 Certificate",
+        description: "Level 5 Certificate from the Skills & Education Group Awards.",
+        type: "image",
+        src: "/images/AccreditedAward5.jpeg",
+        cover: "/images/AccreditedAward5.jpeg",
+    },
+    {
+        title: "UK Award Level 5 Transcript",
+        description: "Important letter from the Skills & Education Group Awards.",
+        type: "image",
+        src: "/images/FQ_UK-5.jpeg",
+        cover: "/images/FQ_UK-5.jpeg",
+    },
+
+    {
+        title: "UK Award Level 4 Certificate",
+        description: "Level 4 Certificate from the Skills & Education Group Awards.",
+        type: "image",
+        src: "/images/AccreditedAward.jpeg",
+        cover: "/images/AccreditedAward.jpeg",
+    },
+    {
+        title: "UK Award Level 4 Transcript",
+        description: "Important letter from the Skills & Education Group Awards.",
+        type: "image",
+        src: "/images/FQ_UK-4.jpeg",
+        cover: "/images/FQ_UK-4.jpeg",
+    },
+    {
         title: "Letter of Recommendation",
         description: "Important letter from a previous professor.",
         type: "image",
