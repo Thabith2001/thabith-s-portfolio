@@ -77,7 +77,7 @@ export default function Docs() {
                </div>
 
                {/* Dialog */}
-               <Dialog open={!!selectedDoc} onClose={() => setSelectedDoc(null)} className="fixed z-50 inset-0">
+                 <Dialog open={!!selectedDoc} onClose={() => setSelectedDoc(null)} className="fixed z-50 inset-0">
                    <div className="flex items-center justify-center min-h-screen bg-black bg-opacity-50 p-4">
                        {selectedDoc?.src && (
                            <Dialog.Panel className="bg-white rounded-lg max-w-[90vw] w-full h-auto p-4 relative overflow-hidden">
