@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center">
 
-                    <a href="#" className="text-4xl font-bold text-sky-500 mb-4 md:mb-0">&lt;code?&gt;</a>
+                    <a href="#" className="text-4xl font-bold text-sky-500 mb-4 md:mb-0">thabith.dev</a>
 
 
                     <div>
@@ -74,7 +74,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-6 text-center text-sm text-gray-500">
-                    &copy; 2025 &lt;code?&gt;. All rights reserved.
+                    &copy; 2025 thabith.dev. All rights reserved.
                 </div>
             </div>
         </footer>
