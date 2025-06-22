@@ -182,7 +182,7 @@ const About = () => {
                         {/* Download Resume Button */}
                         <div className="mt-6">
                             <a
-                                href="/MohamedThabith(se trainee).pdf"
+                                href="/MohamedThabith(software engineering).pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block bg-sky-500 text-gray-900 font-semibold py-2 px-4 rounded-xl shadow-md hover:bg-sky-600 active:bg-sky-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
