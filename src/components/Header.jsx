@@ -39,7 +39,7 @@ const Header = () => {
             <div
                 id="mobileMenu"
                 className={`${isMobileMenuOpen ? 'block' : 'hidden'} lg:hidden px-4 pt-2 pb-4 space-y-2 bg-neutral-800/70 backdrop-blur`}
-         Onclick={toggle}   >
+         onClick={toggle}   >
                 {['Home', 'Projects', 'About', 'Docs'].map((text, index) => {
                     const hrefs = ['#home', '#project', '#about', '#docs'];
                     return (
