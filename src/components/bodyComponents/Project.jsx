@@ -43,13 +43,22 @@ const Project = () => {
                                         <p className="text-gray-200 text-sm mb-4">{project.description}</p>
 
                                         {/* Push button to bottom */}
-                                        <div className="mt-auto flex justify-end">
+                                        <div className="mt-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 px-4 pb-4">
                                             <button
-                                                className="inline-flex items-center px-6 py-2 justify-center text-md font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-200 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2"
+                                                className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium rounded-md shadow text-white bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-green-400"
                                                 onClick={() => window.open(project.codeLink, '_blank')}
                                             >
-                                                Github Link
+                                                🔗 GitHub
                                             </button>
+
+                                            {project.deployLink && (
+                                                <button
+                                                    className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium rounded-md shadow text-gray-800 bg-white hover:bg-gray-100 transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-green-400"
+                                                    onClick={() => window.open(project.deployLink, '_blank')}
+                                                >
+                                                    🚀 Demo
+                                                </button>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
